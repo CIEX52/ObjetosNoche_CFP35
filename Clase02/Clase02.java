@@ -65,74 +65,12 @@ public class Clase02{
 
 
         /*
-         * Paradigma de la Programación Orientada a Objetos
-         * 
-         * Clase: una clase representa cosas sustantivas y concretas
-         *          de la realidad de un negocio. Las clases se 
-         *          identifican en singular y la primer letra en 
-         *          mayúsculas.
-         * 
-         * 
-         * Atributos: son adjetivos que describen a la clase.
-         *            son variables contenidas dentro de una clase
-         *            y pertenecen a un tipo primitivo.
-         * 
-         * Métodos:   son acciones que realiza la clase, y se detectan
-         *            como verbos.
-         * 
-         * Objetos: es una instancia en particular de la clase y tiene 
-         *          estado propio(valor de atributos).
-         * 
-         * Los atributos String se inicializan en null
-         * Los atributos numericos se inicializan en 0
-         * 
-         * Sobrecarga de método: ocurre cuando una clase tienen métodos
-         *  con el mismo nombre, pero con distinta firma de parámetros
-         *  de entrada.
          * 
          */
 
-        System.out.println("-- auto1 --");
-        Auto auto1 = new Auto();        //construye un auto
-        auto1.marca="Ford";
-        auto1.modelo="Mondeo";
-        auto1.color="Rojo";
-        auto1.acelerar();                   // 10
-        auto1.acelerar();                   // 20
-        auto1.acelerar();                   // 30
-        auto1.frenar();                     // 20
-        auto1.acelerar(16);      // 36
-        
-
-        System.out.println(auto1.marca+" "+auto1.modelo+" "+
-                                auto1.color+" "+auto1.velocidad);
-    
-        System.out.println("-- auto2 --");
-        Auto auto2 = new Auto();
-        auto2.marca="Citroen";
-        auto2.modelo="Berlingo";
-        auto2.color="Bordo";
-        
-        for(int a=0; a<=60; a++) auto2.frenar(); //auto2.acelerar();
-        //auto2.velocidad=885;
-        System.out.println(auto2.marca+" "+auto2.modelo+" "+
-        auto2.color+" "+auto2.velocidad);
-
-
-        int x;
-        //System.out.println(x);      //Error variable no inicializada     
-
-        //TODO Sobrecarga de métodos
-
-        //TODO Constructores
-
-        //TODO Valor de retorno
-
-        //TODO Método toString()
+        //Programación Orientada a Objetos
 
     }
-
-    //Sobrecarga de métodos
     public static void funcion(int x){
         System.out.println("Parámetro entero");
     }
@@ -154,5 +92,5 @@ public class Clase02{
     public static void funcion(String x){
         System.out.println("Parámetro String");
     }
-
+    
 }
