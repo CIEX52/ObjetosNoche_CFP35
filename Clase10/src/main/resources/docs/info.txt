@@ -1,0 +1,11 @@
+proyecto thymeleaf
+
+carpetas resources sitio web en thymeleaf
+- carpeta templates:    archivos html
+- carpeta static:       archivos no html
+
+Como encender el server
+desde una terminal bash o gitbash ejecutar
+sh mvnw spring-boot:run
+luego en un navegador ir a url localhost:8080
+

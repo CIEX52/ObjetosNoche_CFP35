@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>ar.org.centro35.curso.java</groupId>
-	<artifactId>Clase05</artifactId>
+	<artifactId>Clase08</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Clase05</name>
-	<description>Proyecto Clase05</description>
+	<name>Clase08</name>
+	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>21</java.version>
 	</properties>
