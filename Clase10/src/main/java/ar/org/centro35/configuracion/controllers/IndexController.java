@@ -13,25 +13,21 @@ public class IndexController {
     public String getIndex(Model model){
         
         String so=SystemProperties.getSO();
+        String lang=SystemProperties.getUserLanguaje();
         String java=SystemProperties.getJava();
         String user=SystemProperties.getUser();
         String location=SystemProperties.getLocation();
-        String time=SystemProperties.getTime();
+        String date=SystemProperties.getDate();
         String ip=SystemProperties.getIP();
 
         //model.addAttribute("valor", valor);
         model.addAttribute("so", so);
+        model.addAttribute("lang", lang);
         model.addAttribute("java", java);
         model.addAttribute("user", user);
         model.addAttribute("location", location);
-        model.addAttribute("time", time);
+        model.addAttribute("date", date);
         model.addAttribute("ip", ip);
         return "index";
     }
-
-    @GetMapping("/index2")
-    public String getIndex2(){
-        return "index2";
-    }
-
 }

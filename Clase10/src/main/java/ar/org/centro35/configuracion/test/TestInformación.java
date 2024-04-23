@@ -2,6 +2,7 @@ package ar.org.centro35.configuracion.test;
 
 import java.net.InetAddress;
 import java.util.Calendar;
+import java.time.LocalDate;
 
 public class TestInformación {
     public static void main(String[] args) {
@@ -10,6 +11,9 @@ public class TestInformación {
                             System.getProperty("os.version")+", "+
                             System.getProperty("os.arch"));
         
+        // Lenguaje de Usuario
+        System.out.println(System.getProperty("user.language")+" ("+System.getProperty("user.country")+")");
+
         //Versión de Java
         System.out.println( System.getProperty("java.vm.vendor")+", "+
                             System.getProperty("java.vm.name")+", "+
@@ -18,19 +22,22 @@ public class TestInformación {
         //User
         System.out.println( System.getProperty("user.name"));
 
+        Calendar calendar = Calendar.getInstance();
         //Ubicación
-        System.out.println(Calendar
-                                    .getInstance()
+        System.out.println(calendar
                                     .getTimeZone()
                                     .getID()
                                     .replace("/", " ")
                                     .replace("_", " "));
         
-        // Hora SO
-        System.out.println(String.format("%d:%d:%d",
-                                                Calendar.getInstance().get(Calendar.HOUR_OF_DAY),
-                                                Calendar.getInstance().get(Calendar.MINUTE),
-                                                Calendar.getInstance().get(Calendar.SECOND)));
+        // // Hora SO
+        // System.out.println(String.format("%d:%d:%d",
+        //                                         calendar.get(Calendar.HOUR_OF_DAY),
+        //                                         calendar.get(Calendar.MINUTE),
+        //                                         calendar.get(Calendar.SECOND)));
+
+        // Fecha con java.time.LocalDate
+        System.out.println(LocalDate.now());
 
         //IP
         String ip="";

@@ -2,6 +2,7 @@ package ar.org.centro35.configuracion.utils;
 
 import java.net.InetAddress;
 import java.util.Calendar;
+import java.time.LocalDate;
 
 public class SystemProperties {
     
@@ -10,6 +11,10 @@ public class SystemProperties {
                 System.getProperty("os.version")+", "+
                 System.getProperty("os.arch");
     }
+
+public static String getUserLanguaje(){
+    return System.getProperty("user.language")+" ("+System.getProperty("user.country")+")";
+}
 
     public static String getJava(){
         return  System.getProperty("java.vm.vendor")+", "+
@@ -30,10 +35,14 @@ public class SystemProperties {
                         .replace("_", " ");
     }
 
-    public static String getTime(){
-        return  Calendar.getInstance().get(Calendar.HOUR_OF_DAY)+":"+
-                Calendar.getInstance().get(Calendar.MINUTE)+":"+
-                Calendar.getInstance().get(Calendar.SECOND);
+    // public static String getTime(){
+    //     return  Calendar.getInstance().get(Calendar.HOUR_OF_DAY)+":"+
+    //             Calendar.getInstance().get(Calendar.MINUTE)+":"+
+    //             Calendar.getInstance().get(Calendar.SECOND);
+    // }
+
+    public static String getDate(){
+        return LocalDate.now().toString();
     }
 
     public static String getIP(){
