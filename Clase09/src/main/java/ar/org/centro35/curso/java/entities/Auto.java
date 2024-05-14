@@ -1,7 +1,6 @@
 package ar.org.centro35.curso.java.entities;
 
 import lombok.AllArgsConstructor;
-import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.ToString;

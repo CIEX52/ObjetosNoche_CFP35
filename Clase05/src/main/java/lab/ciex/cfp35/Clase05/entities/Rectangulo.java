@@ -1,3 +1,5 @@
+package lab.ciex.cfp35.Clase05.entities;
+
 public class Rectangulo {
     double lado1;
     double lado2;

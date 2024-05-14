@@ -28,8 +28,5 @@ SELECT alumnos.id, alumnos.nombre, alumnos.apellido, cursos.titulo, cursos.profe
         FROM alumnos
         JOIN cursos ON alumnos.id_curso = cursos.id
         WHERE cursos.id IN (
-                SELECT id_curso
-                    FROM alumnos
-                    GROUP BY id_curso
-                    HAVING COUNT(*) > 2
+                SELECT id_curso FROM alumnos GROUP BY id_curso HAVING COUNT(*) > 2
         );

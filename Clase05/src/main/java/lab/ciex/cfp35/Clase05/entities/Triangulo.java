@@ -1,3 +1,5 @@
+package lab.ciex.cfp35.Clase05.entities;
+
 public class Triangulo {
     double base;
     double altura;
