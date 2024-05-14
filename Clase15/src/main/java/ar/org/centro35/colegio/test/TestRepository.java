@@ -15,31 +15,31 @@ public class TestRepository {
 
         System.out.println(" --- Método .save() ---");
 
-        // Curso curso = new Curso(0, "HTML y Bootstrap", "Gomez", Dia.MARTES, Turno.TARDE);
-        // cursoRepository.save(curso);
-        // System.out.println(curso);
-        // System.err.println();
-        // System.err.println();
+        Curso curso = new Curso(0, "HTML y Bootstrap", "Gomez", Dia.MARTES, Turno.TARDE);
+        cursoRepository.save(curso);
+        System.out.println(curso);
+        System.err.println();
+        System.err.println();
 
-        // System.out.println(" -- Método .getById() ---");	
-        // System.out.println(cursoRepository.getById(13));
-        // System.err.println();
-        // System.err.println();
+        System.out.println(" -- Método .getById() ---");	
+        System.out.println(cursoRepository.getById(13));
+        System.err.println();
+        System.err.println();
 
-        // System.out.println(" -- Método .remove() ---");	
-        // cursoRepository.remove(cursoRepository.getById(23));
-        // System.err.println();
-        // System.err.println();
+        System.out.println(" -- Método .remove() ---");	
+        cursoRepository.remove(cursoRepository.getById(23));
+        System.err.println();
+        System.err.println();
 
-        // System.out.println(" -- Método .getLikeTitulo() ---");
-        // cursoRepository.getLikeTitulo("HT").forEach(System.out::println);
-        // System.err.println();
-        // System.err.println();
+        System.out.println(" -- Método .getLikeTitulo() ---");
+        cursoRepository.getLikeTitulo("HT").forEach(System.out::println);
+        System.err.println();
+        System.err.println();
 
-        // System.out.println(" -- Método .getAll() ---");    
-        // cursoRepository.getAll().forEach(System.out::println);
-        // System.err.println();
-        // System.err.println();
+        System.out.println(" -- Método .getAll() ---");    
+        cursoRepository.getAll().forEach(System.out::println);
+        System.err.println();
+        System.err.println();
 
         Alumno alumno = new Alumno(0, "Ivan", "Carneiro", 35, 12);
         alumnoRepository.save(alumno);

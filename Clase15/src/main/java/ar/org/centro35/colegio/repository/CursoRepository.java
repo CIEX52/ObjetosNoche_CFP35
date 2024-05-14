@@ -15,6 +15,9 @@ public class CursoRepository {
     
     private Connection conn = Connector.getConnection();
 
+    /**
+     * @param curso
+     */
     public void save (Curso curso){
         if (curso == null) return;
         try (PreparedStatement ps = conn.prepareStatement(
@@ -33,6 +36,10 @@ public class CursoRepository {
     }
 
 
+    /**
+     * @param id (int)
+     * @return Elimina un curso a partir del id pasado como parámetro.
+     */
     public void remove(Curso curso){
         if(curso == null) return;
         try (PreparedStatement ps=conn.prepareStatement("DELETE FROM cursos WHERE id=?")){
@@ -44,6 +51,10 @@ public class CursoRepository {
     }
 
 
+
+    /**
+     * @return Devuelve el listado de cursos disponibles.
+     */
     public List<Curso> getAll(){
         List<Curso> list = new ArrayList();
         try (ResultSet rs=conn.createStatement().executeQuery("select * from cursos")){
@@ -63,6 +74,10 @@ public class CursoRepository {
     }
 
 
+    /**
+     * @param id (int)
+     * @return Devuelve el curso correspondiente al id pasado como parámetro.
+     */
     public Curso getById(int id){
         Curso curso = new Curso();
         try (ResultSet rs=conn.createStatement().executeQuery("select * from cursos where id="+id)){
@@ -80,6 +95,10 @@ public class CursoRepository {
     }
 
 
+    /**
+     * @param curso.titulo (String)
+     * @return Devuelve los cursos que en su título contengan el string o parte del string pasado como parámetro.
+     */
     public List<Curso> getLikeTitulo(String titulo){
         if(titulo==null) return new ArrayList();
         List<Curso> list = new ArrayList();
