@@ -1,8 +1,5 @@
 package ar.org.centro35.colegio.test;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import ar.org.centro35.colegio.entities.Curso;
 import ar.org.centro35.colegio.enums.Dia;
 import ar.org.centro35.colegio.enums.Turno;
@@ -52,8 +49,5 @@ public class TestApiStream {
                         .stream()
                         .filter(curso->curso.getProfesor().toLowerCase().endsWith("a"))
                         .forEach(System.out::println);
-
-                        
-
     }
 }

@@ -9,7 +9,9 @@ import lombok.ToString;
 @Getter
 @AllArgsConstructor
 @EqualsAndHashCode
-//@Data                   //@ToString @Getter @Setter @EqualsAndHashCode
+// @Data
+// @Setter
+
 public class Auto implements Comparable<Auto>{
     private String marca;
     private String modelo;
@@ -31,6 +33,5 @@ public class Auto implements Comparable<Auto>{
     //     if (this == obj) return true;
     //     return this.hashCode()==obj.hashCode();
     // }
- 
     
 }
