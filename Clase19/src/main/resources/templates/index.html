@@ -5,18 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Colegio</title>
-    <link rel="icon" href=".\icons\school.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="icons/colegio.png" rel="icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
-    <div class="container-md bg-secondary rounded">
+    <div class="container-md bg-secondary-subtle">
 
-        <!-- menu -->
-        <nav class="navbar navbar-expand-lg bg-primary  p-2">
+        <!-- Menú de navegación -->
+        <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
             <div class="container-fluid">
-                <a class="navbar-brand text-light" href="#">Navbar</a>
+                <a class="navbar-brand" href="">
+                    <img src="icons/colegio.png" alt="Logo" width="30" height="24"
+                        class="d-inline-block align-text-top">
+                    Colegio
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -24,42 +29,37 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item text-light bg-secondary p-1 rounded">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <li class="nav-item">
+                            <a class="nav-link active item" aria-current="page" href="/">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Dropdown
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
+                            <a class="nav-link active item" aria-current="page" href="/cursos">Cursos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link disabled">Disabled</a>
+                            <a class="nav-link active item" aria-current="page" href="/alumnos">Alumnos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active item" aria-current="page" href="/configuracion">Configuración</a>
+                        </li>
+                        <li class="nav-item bg-success text-light m-2 px-4">
+                            reloj
                         </li>
                     </ul>
                     <form class="d-flex" role="search">
                         <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                        <button class="btn btn-info" type="submit">Buscar</button>
+                        <button class="btn btn-outline-info" type="submit">Buscar</button>
                     </form>
                 </div>
             </div>
         </nav>
 
         <!-- Banner -->
-        <h1 class="text-center bg-success p-2 m-2">Sistema Colegio</h1>
+        <h1 class="text-center text-primary bg-success-subtle p-2 m-2">Sistema de Colegio</h1>
 
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
